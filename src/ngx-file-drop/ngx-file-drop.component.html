@@ -7,12 +7,12 @@
     <input 
       type="file" 
       #fileSelector 
-      [accept]="accept" 
-      [directory]="directory" 
-      [webkitdirectory]="directory"
-      [mozdirectory]="directory"
-      [msdirectory]="directory"
-      [odirectory]="directory"
+      [accept]="accept"
+      [attr.directory]="directory" 
+      [attr.webkitdirectory]="directory"
+      [attr.mozdirectory]="directory"
+      [attr.msdirectory]="directory"
+      [attr.odirectory]="directory"
       [multiple]="multiple"
       (change)="uploadFiles($event)" 
       class="ngx-file-drop__file-input" 
